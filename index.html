@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mistério do Sumiço na Floresta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Passo 1 -->
+        <div class="passo ativo" id="passo-1">
+            <h1>O Mistério do Sumiço na Floresta</h1>
+            <p>Você recebe uma ligação de um amigo que desapareceu enquanto explorava uma floresta próxima. Ele deixou uma mensagem de texto enigmática antes de sumir. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="2">Ir até a floresta</button>
+            <button class="btn-proximo" data-proximo="3">Chamar a polícia</button>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo" id="passo-2">
+            <h1>Na Floresta</h1>
+            <p>Você chega à floresta e encontra o carro do seu amigo estacionado. Ao olhar ao redor, percebe que há marcas estranhas no chão. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="4">Seguir as marcas</button>
+            <button class="btn-proximo" data-proximo="5">Verificar o carro</button>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo" id="passo-3">
+            <h1>Chamando a Polícia</h1>
+            <p>A polícia chega rapidamente e começa a investigar. Eles encontram uma pista: um mapa com um local marcado. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="6">Seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="2">Ir até a floresta</button>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="passo" id="passo-4">
+            <h1>Seguindo as Marcas</h1>
+            <p>Você segue as marcas e encontra uma clareira com uma cabana abandonada. A porta está entreaberta. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na cabana</button>
+            <button class="btn-proximo" data-proximo="8">Chamar seu amigo</button>
+        </div>
+
+        <!-- Passo 5 -->
+        <div class="passo" id="passo-5">
+            <h1>Verificando o Carro</h1>
+            <p>No carro, você encontra um celular com uma mensagem não lida. A mensagem diz: "Estou perto do lago, venha rápido!". O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Ir até o lago</button>
+            <button class="btn-proximo" data-proximo="4">Seguir as marcas</button>
+        </div>
+
+        <!-- Passo 6 -->
+        <div class="passo" id="passo-6">
+            <h1>Seguindo o Mapa</h1>
+            <p>Você segue o mapa e chega a um local isolado. Lá, encontra uma caixa com fotos do seu amigo e anotações sobre uma seita local. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="10">Investigar as anotações</button>
+            <button class="btn-proximo" data-proximo="11">Voltar para a floresta</button>
+        </div>
+
+        <!-- Passo 7 -->
+        <div class="passo" id="passo-7">
+            <h1>Dentro da Cabana</h1>
+            <p>Dentro da cabana, você encontra um diário que pertence ao seu amigo. Ele fala sobre uma seita que realiza rituais na floresta. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="12">Procurar mais pistas</button>
+            <button class="btn-proximo" data-proximo="3">Chamar a polícia</button>
+        </div>
+
+        
+        <!-- Passo 8 -->
+        <div class="passo" id="passo-8">
+            <h1>Chamando Seu Amigo</h1>
+            <p>Você tenta ligar para seu amigo, mas a ligação cai. Você decide ir até o lago, onde ele mencionou estar. Ao chegar, você vê uma fogueira e algumas pessoas em volta. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="13">Abordar as pessoas</button>
+            <button class="btn-proximo" data-proximo="14">Esconder e observar</button>
+        </div>
+
+        <!-- Passo 9 -->
+        <div class="passo" id="passo-9">
+            <h1>Rumo ao Lago</h1>
+            <p>Você corre até o lago e encontra seu amigo amarrado a uma árvore, cercado por membros da seita. Eles parecem estar realizando um ritual. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="15">Tentar libertar seu amigo</button>
+            <button class="btn-proximo" data-proximo="16">Chamar a polícia</button>
+        </div>
+
+        <!-- Passo 10 -->
+        <div class="passo" id="passo-10">
+            <h1>Investigando as Anotações</h1>
+            <p>As anotações falam sobre um ritual que acontece na noite de lua cheia. Você percebe que a lua cheia é hoje. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="17">Voltar para a floresta e avisar a polícia</button>
+            <button class="btn-proximo" data-proximo="18">Tentar impedir o ritual</button>
+        </div>
+
+        <!-- Passo 11 -->
+        <div class="passo" id="passo-11">
+            <h1>Voltando para a Floresta</h1>
+            <p>Você decide voltar para a floresta e avisar a polícia sobre a seita. Ao chegar, você encontra os policiais que já estavam investigando a área. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="19">Contar tudo o que sabe</button>
+            <button class="btn-proximo" data-proximo="20">Levar os policiais até o lago</button>
+        </div>
+
+        <!-- Passo 12 -->
+        <div class="passo" id="passo-12">
+            <h1>Procurando Mais Pistas</h1>
+            <p>Você encontra uma caixa escondida com objetos ritualísticos e mais anotações sobre a seita. Você decide levar tudo para a polícia. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="21">Levar as provas para a delegacia</button>
+            <button class="btn-proximo" data-proximo="22">Investigar mais a fundo na floresta</button>
+        </div>
+
+        <!-- Passo 13 -->
+        <div class="passo" id="passo-13">
+            <h1>Abordando as Pessoas</h1>
+            <p>Você se aproxima e pergunta o que está acontecendo. Eles se tornam hostis e tentam te afastar. Você precisa agir rápido!</p>
+            <button class="btn-proximo" data-proximo="23">Tentar negociar</button>
+            <button class="btn-proximo" data-proximo="24">Chamar a polícia</button>
+        </div>
+
+        <!-- Passo 14 -->
+        <div class="passo" id="passo-14">
+            <h1>Escondendo e Observando</h1>
+            <p>Você se esconde e observa. Vê seu amigo sendo levado para o centro da fogueira. Você precisa fazer algo antes que seja tarde demais!</p>
+            <button class="btn-proximo" data-proximo="15">Tentar libertar seu amigo</button>
+            <button class="btn-proximo" data-proximo="16">Chamar a polícia</button>
+        </div>
+
+        
+            <!-- Passo 15 -->
+            <div class="passo" id="passo-15">
+                <h1>Tentando Libertar Seu Amigo</h1>
+                <p>Você corre em direção ao seu amigo e consegue desamarrá-lo, mas os membros da seita percebem e começam a te perseguir. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="23">Correr para a floresta</button>
+                <button class="btn-proximo" data-proximo="24">Tentar enfrentar os membros da seita</button>
+            </div>
+    
+            <!-- Passo 16 -->
+            <div class="passo" id="passo-16">
+                <h1>Chamando a Polícia</h1>
+                <p>Você liga para a polícia e informa sobre a situação. Eles prometem chegar rapidamente. Enquanto isso, você observa os membros da seita se preparando para o ritual. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="19">Ficar e esperar a polícia</button>
+                <button class="btn-proximo" data-proximo="18">Tentar impedir o ritual</button>
+            </div>
+    
+            <!-- Passo 17 -->
+            <div class="passo" id="passo-17">
+                <h1>Voltando para a Floresta e Avisando a Polícia</h1>
+                <p>Você corre de volta para a floresta e encontra os policiais. Você os leva até o lago, onde a seita está reunida. Eles prendem os membros e resgatam seu amigo. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+                <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+            </div>
+    
+            <!-- Passo 18 -->
+            <div class="passo" id="passo-18">
+                <h1>Tentando Impedir o Ritual</h1>
+                <p>Você corre em direção ao centro da fogueira e grita para parar. Os membros da seita ficam confusos, e você consegue distrair eles o suficiente para que seu amigo escape. O que você faz agora?</p>
+                <button class="btn-proximo" data-proximo="28">Fugir com seu amigo</button>
+                <button class="btn-proximo" data-proximo="24">Chamar a polícia</button>
+            </div>
+    
+            <!-- Passo 19 -->
+            <div class="passo" id="passo-19">
+                <h1>Contando Tudo o que Sabe</h1>
+                <p>Você conta aos policiais tudo o que descobriu sobre a seita e onde seu amigo pode estar. Eles organizam uma operação para resgatá-lo. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Acompanhar a operação</button>
+                <button class="btn-proximo" data-proximo="27">Esperar no carro da polícia</button>
+            </div>
+    
+            <!-- Passo 20 -->
+            <div class="passo" id="passo-20">
+                <h1>Levando os Policiais até o Lago</h1>
+                <p>Você leva os policiais até o lago, onde a seita está reunida. Eles conseguem prender os membros e resgatar seu amigo. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+                <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+            </div>
+    
+            <!-- Passo 21 -->
+            <div class="passo" id="passo-21">
+                <h1>Levando as Provas para a Delegacia</h1>
+                <p>Você leva as provas para a delegacia e os policiais ficam impressionados. Eles prometem investigar a seita a fundo. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+                <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+            </div>
+    
+            
+                            <!-- Passo 22 -->
+        <div class="passo" id="passo-22">
+            <h1>Investigando Mais a Fundo</h1>
+            <p>Você decide investigar mais a fundo na floresta e encontra um antigo altar escondido entre as árvores. Há símbolos estranhos e vestígios de rituais passados. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="29">Tirar fotos e levar para a polícia</button>
+            <button class="btn-proximo" data-proximo="30">Tentar descobrir mais sobre a seita</button>
+        </div>
+
+        <!-- Passo 23 -->
+        <div class="passo" id="passo-23">
+            <h1>Correndo para a Floresta</h1>
+            <p>Você corre para a floresta, com seu amigo ao seu lado. Os membros da seita estão atrás de vocês, mas você conhece um caminho secreto. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="31">Levar seu amigo pelo caminho secreto</button>
+            <button class="btn-proximo" data-proximo="32">Tentar despistar os membros da seita</button>
+        </div>
+
+        <!-- Passo 24 -->
+        <div class="passo" id="passo-24">
+            <h1>Tentando Enfrentar os Membros da Seita</h1>
+            <p>Você decide enfrentar os membros da seita, mas eles são muitos e você acaba sendo cercado. Seu amigo consegue escapar, mas você precisa de um plano. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="33">Gritar por ajuda</button>
+            <button class="btn-proximo" data-proximo="34">Tentar negociar com eles</button>
+        </div>
+
+        <!-- Passo 25 -->
+        <div class="passo" id="passo-25">
+            <h1>Fugindo para a Floresta</h1>
+            <p>Você e seu amigo correm para a floresta, mas os membros da seita estão se aproximando. Você precisa encontrar um lugar seguro para se esconder. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="35">Esconder-se em uma caverna próxima</button>
+            <button class="btn-proximo" data-proximo="36">Subir em uma árvore alta</button>
+        </div>
+
+        <!-- Passo 26 -->
+        <div class="passo" id="passo-26">
+            <h1>Agradecendo aos Policiais</h1>
+            <p>Você agradece aos policiais pelo resgate e eles prometem continuar a investigação sobre a seita. Seu amigo está a salvo e vocês decidem voltar para casa. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="37">Convidar seu amigo para um café</button>
+            <button class="btn-proximo" data-proximo="38">Falar sobre o que aconteceu e planejar como ajudar a polícia</button>
+        </div>
+
+        <!-- Passo 27 -->
+        <div class="passo" id="passo-27">
+            <h1>Conversando com Seu Amigo</h1>
+            <p>Você e seu amigo conversam sobre o que aconteceu. Ele revela que estava investigando a seita por conta própria. Vocês decidem que precisam ajudar a polícia a desmantelar a seita. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="39">Reunir mais informações sobre a seita</button>
+            <button class="btn-proximo" data-proximo="40">Contar tudo para a polícia novamente</button>
+        </div>
+
+        <!-- Passo 28 -->
+        <div class="passo" id="passo-28">
+            <h1>Fugindo com Seu Amigo</h1>
+            <p>Você e seu amigo fogem juntos, mas os membros da seita estão em seu encalço. Vocês precisam encontrar um lugar seguro rapidamente. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="35">Esconder-se em uma caverna próxima</button>
+            <button class="btn-proximo" data-proximo="36">Subir em uma árvore alta</button>
+        </div>
+
+        
+            <!-- Passo 29 -->
+            <div class="passo" id="passo-29">
+                <h1>Tirando Fotos e Levando para a Polícia</h1>
+                <p>Você tira fotos do altar e dos símbolos estranhos. Ao voltar para a cidade, você leva as evidências para a polícia. Eles ficam impressionados e prometem investigar a fundo. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+                <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+            </div>
+    
+            <!-- Passo 30 -->
+            <div class="passo" id="passo-30">
+                <h1>Tentando Descobrir Mais sobre a Seita</h1>
+                <p>Você decide investigar mais sobre a seita por conta própria. Você encontra um antigo livro em uma biblioteca que fala sobre rituais e seitas locais. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="39">Levar o livro para a polícia</button>
+                <button class="btn-proximo" data-proximo="40">Continuar a pesquisa sozinho</button>
+            </div>
+    
+            <!-- Passo 31 -->
+            <div class="passo" id="passo-31">
+                <h1>Levando Seu Amigo pelo Caminho Secreto</h1>
+                <p>Você leva seu amigo pelo caminho secreto e conseguem escapar dos membros da seita. Após um tempo, vocês chegam a um lugar seguro. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer ao seu amigo por ter ajudado</button>
+                <button class="btn-proximo" data-proximo="27">Contar a ele sobre o que você descobriu</button>
+            </div>
+    
+            <!-- Passo 32 -->
+            <div class="passo" id="passo-32">
+                <h1>Tentando Despistar os Membros da Seita</h1>
+                <p>Você e seu amigo se escondem atrás de algumas árvores e conseguem despistar os membros da seita. Após um tempo, vocês decidem voltar para a cidade. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer ao seu amigo por ter ajudado</button>
+                <button class="btn-proximo" data-proximo="27">Contar a ele sobre o que você descobriu</button>
+            </div>
+    
+            <!-- Passo 33 -->
+            <div class="passo" id="passo-33">
+                <h1>Gritando por Ajuda</h1>
+                <p>Você grita por ajuda e chama a atenção de um grupo de pessoas que estava passando. Eles ajudam a afastar os membros da seita. O que você faz agora?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer às pessoas que ajudaram</button>
+                <button class="btn-proximo" data-proximo="27">Contar a elas sobre a seita</button>
+            </div>
+    
+            <!-- Passo 34 -->
+            <div class="passo" id="passo-34">
+                <h1>Tentando Negociar com Eles</h1>
+                <p>Você tenta negociar com os membros da seita, mas eles não estão dispostos a ouvir. Você precisa de um plano de fuga. O que você faz?</p>
+                <button class="btn-proximo" data-proximo="35">Tentar distrair eles e fugir</button>
+                <button class="btn-proximo" data-proximo="36">Chamar seu amigo para ajudar</button>
+            </div>
+    
+            <!-- Passo 35 -->
+            <div class="passo" id="passo-35">
+                <h1>Escondendo-se em uma Caverna Próxima</h1>
+                <p>Você e seu amigo se escondem em uma caverna próxima. Os membros da seita passam, mas não conseguem encontrá-los. Após um tempo, o que você faz?</p>
+                <button class="btn-proximo" data-proximo="26">Agradecer ao seu amigo por ter ajudado</button>
+                <button class="btn-proximo" data-proximo="27">Planejar a próxima ação juntos</button>
+            </div>
+    
+                    <!-- Passo 36 -->
+        <div class="passo" id="passo-36">
+            <h1>Subindo em uma Árvore Alta</h1>
+            <p>Você e seu amigo sobem em uma árvore alta para se esconder. De lá, vocês conseguem ver os membros da seita procurando por vocês. Após um tempo, o que você faz?</p>
+            <button class="btn-proximo" data-proximo="26">Agradecer ao seu amigo por ter ajudado</button>
+            <button class="btn-proximo" data-proximo="27">Planejar a próxima ação juntos</button>
+        </div>
+
+        <!-- Passo 37 -->
+        <div class="passo" id="passo-37">
+            <h1>Convidando Seu Amigo para um Café</h1>
+            <p>Você convida seu amigo para um café para relaxar e conversar sobre o que aconteceu. Durante a conversa, vocês decidem que precisam se manter em contato e ajudar a polícia. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="39">Planejar como ajudar a polícia</button>
+            <button class="btn-proximo" data-proximo="40">Falar sobre o que aconteceu e como se proteger</button>
+        </div>
+
+        <!-- Passo 38 -->
+        <div class="passo" id="passo-38">
+            <h1>Falando sobre o que Aconteceu</h1>
+            <p>Você e seu amigo falam sobre o que aconteceu e como se proteger. Vocês decidem que precisam se manter vigilantes e continuar a investigar a seita. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="39">Reunir mais informações sobre a seita</button>
+            <button class="btn-proximo" data-proximo="40">Contar tudo para a polícia novamente</button>
+        </div>
+
+        <!-- Passo 39 -->
+        <div class="passo" id="passo-39">
+            <h1>Reunindo Mais Informações sobre a Seita</h1>
+            <p>Você e seu amigo começam a reunir mais informações sobre a seita, conversando com pessoas que podem ter visto algo suspeito. Vocês decidem que é hora de levar essas informações para a polícia. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+            <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+        </div>
+
+        <!-- Passo 40 -->
+        <div class="passo" id="passo-40">
+            <h1>Contando Tudo para a Polícia Novamente</h1>
+            <p>Você e seu amigo vão até a delegacia e contam tudo o que descobriram. A polícia fica grata pelas informações e promete investigar a fundo. O que você faz agora?</p>
+            <button class="btn-proximo" data-proximo="26">Agradecer aos policiais</button>
+            <button class="btn-proximo" data-proximo="27">Conversar com seu amigo sobre o que aconteceu</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>        
