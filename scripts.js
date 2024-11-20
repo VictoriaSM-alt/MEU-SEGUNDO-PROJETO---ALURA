@@ -21,3 +21,4 @@ botoes.forEach(botao => {
         mostrarProximoPasso(proximoId);
     });
 });
+
